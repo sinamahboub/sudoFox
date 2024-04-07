@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه اصلی</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- اضافه کردن فایل CSS -->
+  </head>
+  <body>
+    <div id="app">
+      <!-- منوی عمودی -->
+      <div class="menu">
+        <a href="javascript:void(0)" onclick="toggleMenu()">
+          <img
+            src="./assets/image/icon/menuVertical.svg"
+            alt="menu button"
+            width="48px"
+          />
+        </a>
+        <!-- بدنه منو -->
+        <div id="myMenu" class="menuBody">
+          <ul>
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#">ماشین حساب</a></li>
+            <li><a href="./booklet.html">جزوه</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- دکمه باز کردن مودال -->
+      <button id="openModal">Open Modal</button>
+
+      <!-- مودال -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <!-- سربرگ مودال -->
+          <div class="modal-head">
+            <h2 class="title">تیتر</h2>
+            <!-- تیتر مودال -->
+            <span class="close">&times;</span>
+            <!-- دکمه بستن مودال -->
+          </div>
+          <!-- بدنه مودال -->
+          <div class="modal-body">
+            <p>محتوا</p>
+            <!-- محتوای مودال -->
+          </div>
+        </div>
+      </div>
+
+      <script src="./assets/js/script.js"></script>
+      <!-- اضافه کردن فایل JavaScript -->
+    </div>
+  </body>
+</html>
